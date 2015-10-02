@@ -1,0 +1,64 @@
+$def with (content)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Página en Webpy" />
+    <meta name="keywords" content="app, webpy, python" />
+    <title>Título de la página</title>
+    <link rel="stylesheet" href="static/estilo.css" />
+	<!-- <script src="javascript.js"></script> -->
+    <!-- <style></style> -->
+</head>
+
+<body>
+<div id="envoltura">	<!-- Envuelve a todo el documento -->
+    <header id="cabecera">	<!--Cabecera del documento -->
+		<img id= "portada" src="static/portada.jpg" /> <!--Imagen de portada -->
+		<hgroup>
+	           <h1 id="titulo">Webpy</h1>
+               <h2 id="subtitulo">Framework para programación web</h2>
+        </hgroup>
+    </header>
+
+    <nav id="menu">	<!-- Menu de navegación -->
+        <ul>
+            <li class="navegacion"><a href="#">Uno</a></li>
+            <li class="navegacion"><a href="#">Dos</a></li>
+            <li class="navegacion"><a href="#">Tres</li></a>
+        </ul>
+	</nav>
+
+    <div id="envolturaCuerpo">
+        <section id="seccion">
+
+            <div id="">
+            <header> <!-- Encabezamiento de la sección -->
+                <h1>Encabezado</h1>
+            </header>
+            </div>
+            <section id="">
+                <header>
+                    <h1>Esto es un encabezado de sección.</h1>
+                </header>
+$:content
+            </section>
+            </div>
+        </section>
+
+        <aside id="lateral"> <!-- Barra lateral -->
+            <header>
+                <h1>ASIDE</h1>
+            </header>
+		</aside>
+	</div> <!-- Aquí cierra la envoltura del cuerpo -->
+
+    <footer id="pie">
+		<header>
+			<h5>Pie de página</h5>
+        </header>
+		<footer>&copy; 2015	Autor/es</footer>
+	</footer>
+</div> <!-- Aquí cierra la envoltura que envuelve a todo el documento -->
+</body>
+</html>
